@@ -1,0 +1,21 @@
+	void FixedUpdate () {
+	n.AddForce(x, y, z * Time.deltaTime);
+// Õ—ﬂ «·Ã”„ √„«„-Œ·›-Ì„Ì‰-Ì”«—
+
+		if ( Input.GetKey("d")) 
+		{
+			rb.AddForce(500 * Time.deltaTime, 0, 0);
+		}
+		if ( Input.GetKey("q")) 
+		{
+			rb.AddForce(-500 * Time.deltaTime, 0, 0);
+		}
+		if ( Input.GetKey("z")) 
+		{
+			rb.AddForce(0, 0, 500 * Time.deltaTime);
+		}
+		if ( Input.GetKey("s")) 
+		{
+			rb.AddForce(0, 0, -500 * Time.deltaTime);
+		}
+
